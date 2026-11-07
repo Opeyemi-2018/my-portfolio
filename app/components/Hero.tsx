@@ -77,12 +77,12 @@ const Hero = () => {
   return (
     <section className="bg-white  pb-24 pt-48 text-center  md:px-6">
       <h1 className="mx-auto max-w-4xl text-5xl  font-semibold tracking-tight text-neutral-900 md:text-7xl">
-        Your product, engineered
+        Hey I&apos;m {profile.name},
       </h1>
       <p className="mx-auto px-3 mt-8 max-w-3xl text-[16px] text-neutral-800 md:text-[20px] md:leading-snug">
-        I&apos;m {profile.name}, a {profile.role.toLowerCase()} who designs,
-        builds and ships fast, reliable web apps, from pixel-perfect frontends
-        to rock-solid Backend APIs.
+        a {profile.role.toLowerCase()} who designs, builds and ships fast,
+        reliable web apps, from rock-solid Backend APIs to pixel-perfect
+        frontends .
       </p>
       {/* <a
         href="#work"
@@ -146,7 +146,9 @@ const Hero = () => {
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="#"
+                href={profile.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full bg-white px-7 py-2 font-medium text-neutral-900 transition hover:bg-neutral-200"
               >
                 Resume
